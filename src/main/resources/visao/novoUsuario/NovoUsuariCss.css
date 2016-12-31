@@ -1,0 +1,70 @@
+.superio{
+
+    -fx-background-color: #279B61;
+
+}
+
+
+
+.image{
+    -fx-background-image: url("imagens/locked.png");
+}
+
+.buttoRaio{
+
+    -fx-background-radius: 150 150 150 150;
+}
+
+.base-login{
+
+
+    -fx-background-color: #008AB8;
+
+}
+
+.butao1-red {
+    -fx-background-color: #cc3333;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.butao1-red:hover {
+    -fx-background-color: #993333;
+}
+
+
+.butao2-red {
+    -fx-background-color: linear-gradient( #61a2b1,#61a2b1);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.butao2-red:hover {
+    -fx-background-color:#CC3333;
+}
+
+
+.confimar {
+    -fx-background-color: #279B61;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.confimar:hover {
+    -fx-background-color: #993333;
+}
+
+.fecha {
+    -fx-background-color: #279B61;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.fecha:hover {
+    -fx-background-color:  #993333;
+}
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="594.0" stylesheets="@SplashCss.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="616.0" layoutX="-4.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/imagemfundo.png" />
+         </image></ImageView>
+      <Region layoutX="-8.0" layoutY="221.0" opacity="0.73" prefHeight="119.0" prefWidth="604.0" style="-fx-background-color: darkgray;" />
+      <Label layoutX="355.0" layoutY="226.0" prefHeight="23.0" prefWidth="219.0" text="SISTEMA VIKINGS" textFill="WHITE">
+         <font>
+            <Font name="BebasNeueBold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="330.0" layoutY="268.0" prefHeight="5.0" prefWidth="250.0" />
+      <Label layoutX="364.0" layoutY="269.0" text="Biblioteca: 2016 1.0.0" textFill="WHITE">
+         <font>
+            <Font name="BebasNeueRegular" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="101.0" fitWidth="108.0" layoutX="-8.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="96.0" layoutY="263.0" text="Ordem De Serviço" textFill="WHITE">
+         <font>
+            <Font name="BebasNeueRegular" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="256.0" text="{" textFill="#cd0101">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="256.0" text="}" textFill="#c90000">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXProgressBar layoutX="344.0" layoutY="310.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</AnchorPane>

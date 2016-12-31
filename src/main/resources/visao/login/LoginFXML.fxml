@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerLogin">
+    <children>
+        <Pane layoutX="-1.0" layoutY="30.0" prefHeight="301.0" prefWidth="544.0" styleClass="base-login">
+            <stylesheets>
+            <URL value="@LoginCss.css" />
+            </stylesheets></Pane>
+        <Region layoutX="-6.0" prefHeight="31.0" prefWidth="982.0" styleClass="superio" stylesheets="@LoginCss.css" />
+        <Separator layoutX="542.0" layoutY="31.0" orientation="VERTICAL" prefHeight="301.0" prefWidth="4.0" />
+        <Label layoutX="12.0" layoutY="1.0" prefHeight="25.0" prefWidth="148.0" stylesheets="@LoginCss.css" text="Permissão de acesso" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <JFXTextField layoutX="130.0" layoutY="112.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Usuário" />
+        <JFXPasswordField layoutX="127.0" layoutY="215.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Senha" />
+        <Label layoutX="130.0" layoutY="85.0" text="Usuário" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="127.0" layoutY="187.0" text="Senha" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button layoutX="136.0" layoutY="279.0" mnemonicParsing="false" styleClass="confimar" stylesheets="@LoginCss.css" text="Confimar">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button fx:id="tbCancelar" layoutX="250.0" layoutY="279.0" mnemonicParsing="false" styleClass="fecha" stylesheets="@LoginCss.css" text="Cancelar">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button layoutX="933.0" layoutY="3.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" stylesheets="@LoginCss.css">
+            <styleClass>
+                <String fx:value="buttoRaio" />
+                <String fx:value="butao1-red" />
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button layoutX="894.0" layoutY="3.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="25.0" stylesheets="@LoginCss.css">
+            <styleClass>
+                <String fx:value="buttoRaio" />
+                <String fx:value="butao2-red" />
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Region layoutX="545.0" layoutY="31.0" opacity="0.56" prefHeight="301.0" prefWidth="430.0" style="-fx-background-color: darkgray;" stylesheets="@LoginCss.css" />
+      <ImageView fitHeight="192.0" fitWidth="260.0" layoutX="654.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="669.0" layoutY="207.0" prefHeight="19.0" prefWidth="214.0" text=" SISTEMA VIKINGS" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="677.0" layoutY="234.0" prefWidth="200.0" />
+      <Label layoutX="673.0" layoutY="239.0" text="BIBLIOTECA: 2016 1.0.0" textFill="#ffe7e7">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

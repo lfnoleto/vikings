@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Region layoutY="-1.0" prefHeight="38.0" prefWidth="548.0" styleClass="superio" stylesheets="@NovoUsuariCss.css" />
+      <Region layoutY="35.0" prefHeight="313.0" prefWidth="548.0" styleClass="base-login" stylesheets="@NovoUsuariCss.css" />
+      <JFXPasswordField layoutX="151.0" layoutY="143.0" maxWidth="259.0" minWidth="236.0" prefHeight="31.0" prefWidth="259.0" promptText="Senha" />
+      <JFXPasswordField layoutX="153.0" layoutY="223.0" maxWidth="259.0" minWidth="225.0" prefHeight="31.0" prefWidth="259.0" promptText="Confirmação da  Senha" />
+      <Label layoutX="161.0" layoutY="120.0" text="Senha: " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="204.0" text="Confirmação da  Senha:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="48.0" text="Primeiro acesso ao sistema necessita " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="64.0" text="cadastrar uma senha para Administrador" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="82.0" text="Informe uma senha e confirme." textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="511.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="butao1-red" stylesheets="@NovoUsuariCss.css" />
+      <Button layoutX="472.0" layoutY="5.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="25.0" styleClass="butao2-red" stylesheets="@NovoUsuariCss.css" />
+      <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="25.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/locked.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="8.0" layoutY="6.0" text="Senha do Administrador" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
