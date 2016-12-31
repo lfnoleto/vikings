@@ -14,13 +14,13 @@
       <Region layoutY="-1.0" prefHeight="38.0" prefWidth="548.0" styleClass="superio" stylesheets="@NovoUsuariCss.css" />
       <Region layoutY="35.0" prefHeight="313.0" prefWidth="548.0" styleClass="base-login" stylesheets="@NovoUsuariCss.css" />
       <JFXPasswordField layoutX="151.0" layoutY="143.0" maxWidth="259.0" minWidth="236.0" prefHeight="31.0" prefWidth="259.0" promptText="Senha" />
-      <JFXPasswordField layoutX="153.0" layoutY="223.0" maxWidth="259.0" minWidth="225.0" prefHeight="31.0" prefWidth="259.0" promptText="Confirmação da  Senha" />
+      <JFXPasswordField layoutX="153.0" layoutY="225.0" maxWidth="259.0" minWidth="225.0" prefHeight="38.0" prefWidth="259.0" promptText="Confirmação da  Senha" />
       <Label layoutX="161.0" layoutY="120.0" text="Senha: " textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="160.0" layoutY="204.0" text="Confirmação da  Senha:" textFill="WHITE">
+      <Label layoutX="160.0" layoutY="195.0" text="Confirmação da  Senha:" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
