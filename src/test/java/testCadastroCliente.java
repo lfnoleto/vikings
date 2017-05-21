@@ -1,5 +1,5 @@
 /**
- * Created by noleto on 20/05/2017.
+ * Created by noleto on 21/05/2017.
  */
 
 import javafx.application.Application;
@@ -11,7 +11,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class testMenu extends Application {
+public class testCadastroCliente extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -20,7 +20,7 @@ public class testMenu extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-       Parent root = FXMLLoader.load(getClass().getResource("/visao/Menu/Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/visao/cadastroCliente/cadastroCliente.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
