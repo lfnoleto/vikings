@@ -1,0 +1,47 @@
+.superio{
+
+    -fx-background-color: #279B61;
+
+}
+
+
+.screenbase{
+
+    -fx-background-color: lightslategrey;
+
+
+}
+
+.Raio{
+
+     -fx-background-radius: 150 150 150 150;
+ }
+
+.exist-red {
+    -fx-background-color: linear-gradient( #cc3333,#cc3333);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.exist-red:hover {
+    -fx-background-color:#61a2b1;
+}
+
+.butao-red {
+    -fx-background-color: linear-gradient( #61a2b1,#61a2b1);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.butao-red:hover {
+    -fx-background-color:#cc3333;
+}
+
+.imagemfundo{
+    
+    -fx-image: url("imagens/Logo.png");
+}
+
+

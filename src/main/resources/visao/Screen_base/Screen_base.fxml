@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="979.0" styleClass="screenbase" stylesheets="@Screen_base.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerScreenBase">
+   <children>
+      <Region prefHeight="28.0" prefWidth="979.0" styleClass="superio" stylesheets="@Screen_base.css" />
+      <JFXHamburger fx:id="selectMenu" layoutX="910.0" layoutY="30.0" prefHeight="51.0" prefWidth="68.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="-1.0" layoutY="29.0" prefHeight="502.0" prefWidth="200.0" stylesheets="@Screen_base.css" />
+      <Button fx:id="bt_Exist" layoutX="940.0" layoutY="1.0" mnemonicParsing="false" onAction="#tbCancelarAction" prefHeight="18.0" prefWidth="27.0" stylesheets="@Screen_base.css">
+         <styleClass>
+            <String fx:value="Raio" />
+            <String fx:value="exist-red" />
+         </styleClass></Button>
+      <Button layoutX="903.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" stylesheets="@Screen_base.css">
+         <styleClass>
+            <String fx:value="Raio" />
+            <String fx:value="butao-red" />
+         </styleClass></Button>
+      <ImageView fitHeight="306.0" fitWidth="363.0" layoutX="347.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="532.0" layoutY="419.0" prefHeight="36.0" prefWidth="250.0" text="CONTINENTAL SISTEMAS" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="374.0" text="VIKINGS SISTEMA DE ORDEM DE SERVIÇO" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="398.0" text="BIBLIOTECA 2017.0.0.2" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="329.0" layoutY="392.0" prefHeight="4.0" prefWidth="416.0" />
+      <Label layoutX="428.0" layoutY="411.0" prefHeight="49.0" prefWidth="111.0" text="MADE BY :" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -82,11 +82,16 @@
         </dependency>
 
 
+
+
         <dependency>
-            <groupId>postgresql</groupId>
+            <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>9.4.1208-jdbc42-atlassian-hosted</version>
+            <version>42.1.1.jre6</version>
         </dependency>
+
+
+
 
 
 

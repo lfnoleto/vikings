@@ -61,10 +61,12 @@ public class ControllerSplash implements Initializable{
 
                         Parent root = null;
                         try {
+
                             root = FXMLLoader.load(getClass().getResource("/visao/login/LoginFXML.fxml"));
 
                         } catch (IIOException ex) {
                             Logger.getAnonymousLogger(ControllerSplash.class.getName()).log(Level.SEVERE, null, ex);
+                            System.out.print("erro ao chama a cena"+ ex);
 
                         } catch (IOException e) {
                             e.printStackTrace();
