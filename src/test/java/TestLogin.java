@@ -13,7 +13,7 @@ public class TestLogin extends Application{
     @Override
     public void start(Stage stage) throws Exception {
 
-        Parent parent =  FXMLLoader.load(getClass().getResource("visao/login/LoginFXML.fxml"));
+        Parent parent =  FXMLLoader.load(getClass().getResource("/visao/login/LoginFXML.fxml"));
         //stage.getIcons().add(new Image(getClass().getResourceAsStre("img/icone.png"<img src="">));
         Scene scene = new Scene(parent);
         scene.setFill(null);

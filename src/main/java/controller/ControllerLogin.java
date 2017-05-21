@@ -18,21 +18,12 @@ public class ControllerLogin implements Initializable {
 	@FXML
 	private Button tbCancelar;
 
-
-
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
 	}
 
 	public void tbCancelarAction(ActionEvent event) {
-
 		Platform.exit();
-
-
 	}
-
-
-
-
 }
