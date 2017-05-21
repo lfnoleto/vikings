@@ -9,18 +9,18 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerUsuario">
    <children>
       <Region layoutY="-1.0" prefHeight="38.0" prefWidth="548.0" styleClass="superio" stylesheets="@NovoUsuariCss.css" />
       <Region layoutY="35.0" prefHeight="313.0" prefWidth="548.0" styleClass="base-login" stylesheets="@NovoUsuariCss.css" />
-      <JFXPasswordField layoutX="151.0" layoutY="143.0" maxWidth="259.0" minWidth="236.0" prefHeight="31.0" prefWidth="259.0" promptText="Senha" />
-      <JFXPasswordField layoutX="153.0" layoutY="223.0" maxWidth="259.0" minWidth="225.0" prefHeight="31.0" prefWidth="259.0" promptText="Confirmação da  Senha" />
+      <JFXPasswordField fx:id="senha" layoutX="151.0" layoutY="143.0" maxWidth="259.0" minWidth="236.0" prefHeight="31.0" prefWidth="259.0" promptText="Senha" />
+      <JFXPasswordField fx:id="conSenha" layoutX="153.0" layoutY="225.0" maxWidth="259.0" minWidth="225.0" prefHeight="38.0" prefWidth="259.0" promptText="Confirmação da  Senha" />
       <Label layoutX="161.0" layoutY="120.0" text="Senha: " textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="160.0" layoutY="204.0" text="Confirmação da  Senha:" textFill="WHITE">
+      <Label layoutX="160.0" layoutY="195.0" text="Confirmação da  Senha:" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
@@ -40,7 +40,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="511.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="butao1-red" stylesheets="@NovoUsuariCss.css" />
+      <Button fx:id="fechar" layoutX="511.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="butao1-red" stylesheets="@NovoUsuariCss.css" />
       <Button layoutX="472.0" layoutY="5.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="25.0" styleClass="butao2-red" stylesheets="@NovoUsuariCss.css" />
       <ImageView fitHeight="108.0" fitWidth="116.0" layoutX="25.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -52,5 +52,7 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Button fx:id="confimar" layoutX="182.0" layoutY="286.0" mnemonicParsing="false" onAction="#btConfimarAction" text="Confimar" />
+      <Button fx:id="cancelar" layoutX="310.0" layoutY="286.0" mnemonicParsing="false" onAction="#btCancelarAction" text="Cancelar" />
    </children>
 </AnchorPane>

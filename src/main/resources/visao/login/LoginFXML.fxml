@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerLogin">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerLogin">
     <children>
         <Pane layoutX="-1.0" layoutY="30.0" prefHeight="301.0" prefWidth="544.0" styleClass="base-login">
             <stylesheets>
@@ -28,8 +28,8 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <JFXTextField layoutX="130.0" layoutY="112.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Usuário" />
-        <JFXPasswordField layoutX="127.0" layoutY="215.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Senha" />
+        <JFXTextField fx:id="usuario" layoutX="130.0" layoutY="112.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Usuário" />
+        <JFXPasswordField fx:id="senha" layoutX="127.0" layoutY="215.0" maxWidth="260.0" minWidth="260.0" prefHeight="31.0" prefWidth="260.0" promptText="Senha" />
         <Label layoutX="130.0" layoutY="85.0" text="Usuário" textFill="WHITE">
             <font>
                 <Font size="15.0" />
@@ -40,7 +40,7 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button layoutX="136.0" layoutY="279.0" mnemonicParsing="false" styleClass="confimar" stylesheets="@LoginCss.css" text="Confimar">
+        <Button fx:id="tbentra" layoutX="136.0" layoutY="279.0" mnemonicParsing="false" onAction="#setTbentraAction" styleClass="confimar" stylesheets="@LoginCss.css" text="Confimar">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor></Button>
@@ -48,7 +48,7 @@
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor></Button>
-        <Button layoutX="933.0" layoutY="3.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" stylesheets="@LoginCss.css">
+        <Button fx:id="tbCancelar" layoutX="933.0" layoutY="3.0" mnemonicParsing="false" onAction="#tbCancelarAction" prefHeight="25.0" prefWidth="25.0" stylesheets="@LoginCss.css">
             <styleClass>
                 <String fx:value="buttoRaio" />
                 <String fx:value="butao1-red" />
@@ -78,7 +78,7 @@
          </font>
       </Label>
       <Separator layoutX="677.0" layoutY="234.0" prefWidth="200.0" />
-      <Label layoutX="673.0" layoutY="239.0" text="BIBLIOTECA: 2016 1.0.0" textFill="#ffe7e7">
+      <Label layoutX="673.0" layoutY="239.0" text="BIBLIOTECA: 2017 1.0.2" textFill="#ffe7e7">
          <font>
             <Font size="17.0" />
          </font>
