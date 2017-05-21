@@ -1,5 +1,6 @@
 package model.Bo;
 
+import mascaras.Notificacao;
 import model.Dao.UsuarioDao;
 
 import model.vo.Usuario;
@@ -12,6 +13,7 @@ public class CadastroUsuario {
 
 
    UsuarioDao usuarioDao = new UsuarioDao();
+   Notificacao notificacao = new Notificacao();
 
 
 
@@ -34,10 +36,6 @@ public class CadastroUsuario {
             }
 
 
-
-
-
-
         }else{
 
             System.out.println("deu erro no cadastro");
@@ -46,6 +44,14 @@ public class CadastroUsuario {
         }
 
     }
+
+
+
+
+
+
+
+
 
 
 

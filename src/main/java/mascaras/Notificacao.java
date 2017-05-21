@@ -1,5 +1,6 @@
 package mascaras;
 
+import model.vo.Usuario;
 import org.controlsfx.control.Notifications;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -13,6 +14,8 @@ public class Notificacao {
 
     public void notificacao(int x){
 
+        Usuario usuario = new Usuario();
+
         switch (x){
 
             case 1:
@@ -21,7 +24,7 @@ public class Notificacao {
 
                 Notifications erro1= Notifications.create()
                         .title("ERRO LOGIN")
-                        .text("Nome de Usuário ou Senha Está Incorreto, ou Você Não Tem Permissões")
+                        .text("Nome de Usuário ou Senha Está Incorreto, ou Você Não Tem Permissões"+ usuario.getNome()+ usuario.getSenha())
                         .graphic(null)
                         .hideAfter(Duration.seconds(5))
                         .position(Pos.BASELINE_LEFT)

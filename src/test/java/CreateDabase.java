@@ -25,8 +25,10 @@ public class CreateDabase {
 
 
         try{
+
             //STEP 2: Register JDBC driver
             Class.forName("org.postgresql.Driver");
+
 
             //STEP 3: Open a connection
             System.out.println("Connecting to database...");
@@ -37,16 +39,18 @@ public class CreateDabase {
             stmt = conn.createStatement();
 
             try{
-                String sql = "CREATE DATABASE IF NOT EXISTS DB_CONTINENTAL";
+                String sql = "CREATE DATABASE  DB_CONTINENTAL";
                 stmt.executeUpdate(sql);
                 System.out.println("Database created successfully...");
             }catch (SQLException te){
 
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                System.out.print("Deu erro na criar o banco"+te);
+
+              /*  Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("ERRO NO DB CONTINENTAL");
                 alert.setHeaderText(null);
                 alert.setContentText("ERRO AO CRIAR DATABASES BANCO JÁ EXISTE");
-                alert.show();
+                alert.show();*/
 
             }
 
